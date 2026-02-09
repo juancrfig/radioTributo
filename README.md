@@ -1,36 +1,69 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🎙️ La Mega Tributo
 
-## Getting Started
+Un sitio web homenaje creado por oyentes para celebrar el programa de radio **La Mega**. Este proyecto rinde tributo a la historia del programa, sus presentadores, secciones icónicas y la participación de los oyentes.
 
-First, run the development server:
+![Next.js](https://img.shields.io/badge/Next.js-16-black?style=flat-square&logo=next.js)
+![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue?style=flat-square&logo=typescript)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind-4.0-38B2AC?style=flat-square&logo=tailwind-css)
+
+## ✨ Características
+
+- 🏠 **Inicio** - Hero section, mensaje de homenaje, mensajes destacados de oyentes
+- 👥 **Tripulación** - Perfiles de presentadores actuales y ex tripulantes con modales informativos
+- 📻 **Secciones** - Listado de secciones históricas del programa (activas y archivadas)
+- 👻 **Paranormal** - Historias de misterio y fenómenos sobrenaturales
+- 💬 **Oyentes** - Todos los mensajes de los fans con formulario para enviar nuevos
+
+## 🚀 Tecnologías
+
+- [Next.js](https://nextjs.org/) - Framework React
+- [TypeScript](https://www.typescriptlang.org/) - Tipado estático
+- [Tailwind CSS](https://tailwindcss.com/) - Estilos utilitarios
+- [shadcn/ui](https://ui.shadcn.com/) - Componentes de UI
+- [Lucide React](https://lucide.dev/) - Iconos
+
+## 🛠️ Desarrollo
 
 ```bash
+# Instalar dependencias
+npm install
+
+# Servidor de desarrollo
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
+# Construir para producción
+npm run build
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Abre [http://localhost:3000](http://localhost:3000) en tu navegador.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📁 Estructura del Proyecto
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
+my-app/
+├── app/              # Páginas de Next.js
+│   ├── page.tsx      # Inicio
+│   ├── tripulacion/  # Página de tripulación
+│   ├── secciones/    # Página de secciones
+│   ├── paranormal/   # Página paranormal
+│   └── oyentes/      # Página de oyentes
+├── components/       # Componentes React
+│   ├── ui/          # Componentes shadcn/ui
+│   ├── Header.tsx   # Navegación
+│   └── Footer.tsx   # Pie de página
+├── lib/             # Utilidades y datos
+│   └── data.ts      # Contenido del sitio
+└── dist/            # Build estático
+```
 
-## Learn More
+## 🌐 Despliegue
 
-To learn more about Next.js, take a look at the following resources:
+El proyecto está configurado para exportación estática (`output: 'export'`). El build se genera en la carpeta `dist/`.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📝 Licencia
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Este es un proyecto de fans sin fines de lucro. Todo el contenido relacionado con "La Mega" pertenece a sus respectivos dueños.
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+*Sitio creado con ❤️ por los oyentes de La Mega*
